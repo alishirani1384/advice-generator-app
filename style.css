@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-Blue);
+}
+.advice-card{
+    width: 500px;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 1rem;
+    position: relative;
+}
+.card-container{
+    padding: 2rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+p{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+h2{
+    color: var(--Light-Cyan);
+    font-size: 28px;
+}
+picture img{
+    margin-bottom: 1rem;
+}
+button{
+    position: absolute;
+    bottom: -30px;
+    background-color: var(--Neon-Green);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    transition: all 0.2s ease-out
+}
+@media screen and (max-width:500px) {
+    .advice-card{
+        width: 350px;
+    }
+    
+}
